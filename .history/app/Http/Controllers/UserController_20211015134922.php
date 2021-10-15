@@ -19,9 +19,9 @@ class UserController extends Controller
      */
     public function index()
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
         $users=User::all();
 
         $roles=Role::all();
@@ -69,9 +69,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
         $user=User::findOrFail($id);
         $roles=Role::all();
 
@@ -107,9 +107,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
 
         $user=User::findOrFail($id);
         $user->delete();

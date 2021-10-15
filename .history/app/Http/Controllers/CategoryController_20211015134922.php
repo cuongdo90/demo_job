@@ -16,9 +16,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
         $categories=Category::all();
         return view('backends.admin.job.categories.index',compact('categories'));
     }

@@ -107,9 +107,9 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
 
         $user=User::findOrFail($id);
         $user->delete();

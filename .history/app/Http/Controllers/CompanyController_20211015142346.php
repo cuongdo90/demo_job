@@ -16,9 +16,9 @@ class CompanyController extends Controller
      */
     public function index()
     {
-        // if (!Gate::allows('crud')){
-        //     abort(403);
-        // };
+        if (!Gate::allows('crud')){
+            abort(403);
+        };
         $companies=Company::all();
         return view('backends.admin.company.index',compact('companies'));
     }
