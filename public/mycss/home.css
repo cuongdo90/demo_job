@@ -1,0 +1,75 @@
+.job-item {
+    border: 1px solid #E2E2E2;
+    padding: 0.5em 0.5em 1em 0.5em;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+
+    display: inline-block;
+    text-align: center;
+    background: #6dddf5;
+    width: 18%;
+
+}
+.edit-job,.delete-job{
+    width: 80px;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 10px;
+    border-radius: 0.3em;
+}
+img{
+    border-radius: 1em;
+}
+.company-item {
+    border: 1px solid #E2E2E2;
+    padding: 0.5em 0.5em 1em 0.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+
+    display: inline-block;
+    text-align: center;
+    background: #6dddf5;
+    width: 18%;
+
+}
+.edit-company,.delete-company{
+    width: 80px;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 10px;
+    border-radius: 0.3em;
+}
+.category-item {
+    border: 1px solid #E2E2E2;
+    padding: 0.5em 0.5em 1em 0.5em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+
+    display: inline-block;
+    text-align: center;
+    background: #6dddf5;
+    width: 18%;
+
+}
+.edit-category,.delete-category{
+    width: 80px;
+    border: 1px solid #E2E2E2;
+    margin-bottom: 10px;
+    border-radius: 0.3em;
+}

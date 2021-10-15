@@ -1,0 +1,1 @@
+@extends('backends.layouts.master')
